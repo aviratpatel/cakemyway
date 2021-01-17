@@ -2,12 +2,19 @@
   "name": "cakemyway",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.15.1",
+    "npm": "6.14.8"
+  },
+  "homepage": "https://cakemyway.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-lazy-load-image-component": "^1.5.1",
+    "react-responsive-carousel": "^3.2.11",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
@@ -15,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
