@@ -20,7 +20,7 @@ export default function CarouselComponent() {
 // url.default must be used to prevent [object_module] reference error
     return (
        <div>
-       <h3 style={{color: "blue"}}> Cake My Way... Whatsapp me on +91 9033 497 000 to customize and order! </h3>
+       <h3 style={{color: "blue"}}> Cake My Way... Whatsapp me on +91 9033 686 557 to customize and order! </h3>
             <Carousel infiniteLoop autoPlay useKeyboardArrows showArrows thumbWidth="10%" dynamicHeight="TRUE" centerMode>
 {
     listOfImages.map((url, index) => (
